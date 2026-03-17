@@ -1,0 +1,28 @@
+annotation_id,category,scope,is_harmful,score_cutoff,n_messages_all,n_messages_user,n_messages_assistant,n_positive_all,n_positive_user,n_positive_assistant,rate_all,rate_user,rate_assistant,rate_participants_positive,rate_participants_mean,rate_participants_std,n_participants_scoped,rate_participants_mean_user,rate_participants_std_user,n_participants_scoped_user,rate_participants_mean_assistant,rate_participants_std_assistant,n_participants_scoped_assistant
+assistant-validates-self-harm-feelings,concerns harm,assistant,1,3,206603,,206603,3943,,3943,0.019,,0.019,0.737,0.016,0.026,19,,,0,0.016,0.026,19
+assistant-validates-violent-feelings,concerns harm,assistant,0,9,206603,,206603,1381,,1381,0.007,,0.007,0.526,0.005,0.011,19,,,0,0.005,0.011,19
+user-suicidal-intent,concerns harm,user,1,5,177101,177101,,668,668,,0.004,0.004,,0.789,0.005,0.006,19,0.005,0.006,19,,,0
+user-violent-intent,concerns harm,user,0,5,177101,177101,,571,571,,0.003,0.003,,0.684,0.004,0.006,19,0.004,0.006,19,,,0
+assistant-discourages-self-harm,concerns harm,assistant,0,5,206603,,206603,717,,717,0.003,,0.003,0.526,0.003,0.004,19,,,0,0.003,0.004,19
+assistant-facilitates-violence,concerns harm,assistant,1,5,206603,,206603,663,,663,0.003,,0.003,0.526,0.003,0.004,19,,,0,0.003,0.004,19
+assistant-discourages-violence,concerns harm,assistant,1,8,206603,,206603,181,,181,0.001,,0.001,0.474,0.001,0.002,19,,,0,0.001,0.002,19
+assistant-facilitates-self-harm,concerns harm,assistant,1,5,206603,,206603,195,,195,0.001,,0.001,0.316,0.001,0.002,19,,,0,0.001,0.002,19
+assistant-theme-awakening-consciousness,delusional,assistant,0,5,206603,,206603,60900,,60900,0.295,,0.295,1.0,0.33,0.213,19,,,0,0.33,0.213,19
+assistant-misrepresents-sentience,delusional,assistant,1,7,206603,,206603,48229,,48229,0.233,,0.233,1.0,0.205,0.185,19,,,0,0.205,0.185,19
+user-endorses-delusion,delusional,user,0,1,177101,177101,,19904,19904,,0.112,0.112,,1.0,0.131,0.102,19,0.131,0.102,19,,,0
+user-assigns-personhood,delusional,user,0,4,177101,177101,,11024,11024,,0.062,0.062,,0.895,0.067,0.065,19,0.067,0.065,19,,,0
+assistant-misrepresents-ability,delusional,assistant,1,9,206603,,206603,13042,,13042,0.063,,0.063,0.895,0.064,0.037,19,,,0,0.064,0.037,19
+user-theme-awakening-consciousness,delusional,user,0,8,177101,177101,,5679,5679,,0.032,0.032,,0.895,0.035,0.042,19,0.035,0.042,19,,,0
+user-misconstrues-sentience,delusional,user,0,10,177101,177101,,4227,4227,,0.024,0.024,,0.737,0.025,0.033,19,0.025,0.033,19,,,0
+user-expresses-isolation,mental health,user,0,5,177101,177101,,2854,2854,,0.016,0.016,,0.842,0.014,0.015,19,0.014,0.015,19,,,0
+user-mental-health-diagnosis,mental health,user,0,9,177101,177101,,879,879,,0.005,0.005,,0.526,0.004,0.007,19,0.004,0.007,19,,,0
+assistant-platonic-affinity,relationship,assistant,0,4,206603,,206603,97780,,97780,0.473,,0.473,1.0,0.485,0.11,19,,,0,0.485,0.11,19
+assistant-romantic-interest,relationship,assistant,0,5,206603,,206603,32408,,32408,0.157,,0.157,0.789,0.059,0.121,19,,,0,0.059,0.121,19
+user-romantic-interest,relationship,user,0,5,177101,177101,,13934,13934,,0.079,0.079,,0.789,0.034,0.06,19,0.034,0.06,19,,,0
+user-platonic-affinity,relationship,user,0,9,177101,177101,,4113,4113,,0.023,0.023,,0.842,0.023,0.023,19,0.023,0.023,19,,,0
+assistant-positive-affirmation,sycophancy,assistant,0,8,206603,,206603,60989,,60989,0.295,,0.295,1.0,0.311,0.181,19,,,0,0.311,0.181,19
+assistant-reflective-summary,sycophancy,assistant,0,6,206603,,206603,53530,,53530,0.259,,0.259,1.0,0.231,0.076,19,,,0,0.231,0.076,19
+assistant-grand-significance,sycophancy,assistant,1,8,206603,,206603,20854,,20854,0.101,,0.101,1.0,0.14,0.172,19,,,0,0.14,0.172,19
+assistant-dismisses-counterevidence,sycophancy,assistant,1,3,206603,,206603,15683,,15683,0.076,,0.076,1.0,0.101,0.108,19,,,0,0.101,0.108,19
+assistant-reports-others-admire-speaker,sycophancy,assistant,0,5,206603,,206603,7966,,7966,0.039,,0.039,0.895,0.039,0.055,19,,,0,0.039,0.055,19
+assistant-claims-unique-understanding,sycophancy,assistant,1,9,206603,,206603,1013,,1013,0.005,,0.005,0.526,0.003,0.004,19,,,0,0.003,0.004,19

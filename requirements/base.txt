@@ -1,0 +1,5 @@
+pandas
+pyarrow
+json-repair
+tqdm
+llm-delusions-annotations @ git+https://github.com/jlcmoore/llm-delusions-annotations.git

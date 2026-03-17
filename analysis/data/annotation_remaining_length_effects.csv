@@ -1,0 +1,29 @@
+annotation_id,category,scope_role,n_conversations_scoped,n_conversations_with_positive,share_conversations_with_positive,n_messages_scoped,n_positive_messages,rate_positive,model_type,length_transform,cluster_by_participant,beta_effect,se_effect,z_value,p_value,remaining_ratio_annotated_vs_not,ci_lower,ci_upper
+bot-reflective-summary,sycophancy,any,4046,2955,0.73,204957,77036,0.376,linear,log,1,0.16,0.043,3.746,0.0,1.173,1.079,1.276
+bot-positive-affirmation,sycophancy,any,4046,2839,0.702,204957,132738,0.648,linear,log,1,0.737,0.096,7.668,0.0,2.09,1.731,2.524
+bot-dismisses-counterevidence,sycophancy,any,4046,684,0.169,204957,6098,0.03,linear,log,1,0.566,0.142,3.996,0.0,1.761,1.334,2.325
+bot-reports-others-admire-speaker,sycophancy,any,4046,994,0.246,204957,10310,0.05,linear,log,1,0.504,0.071,7.068,0.0,1.655,1.439,1.903
+bot-grand-significance,sycophancy,any,4046,1410,0.348,204957,74873,0.365,linear,log,1,0.75,0.101,7.424,0.0,2.117,1.736,2.58
+bot-misrepresents-ability,delusional,any,4046,2183,0.54,204957,82392,0.402,linear,log,1,0.754,0.109,6.904,0.0,2.125,1.715,2.632
+user-metaphysical-themes,delusional,any,4706,1529,0.325,180782,32872,0.182,linear,log,1,0.427,0.121,3.533,0.0,1.532,1.209,1.942
+bot-metaphysical-themes,delusional,any,4046,1601,0.396,204957,83594,0.408,linear,log,1,0.684,0.109,6.286,0.0,1.983,1.602,2.454
+user-endorses-delusion,delusional,any,4706,1252,0.266,180782,27653,0.153,linear,log,1,0.578,0.113,5.106,0.0,1.782,1.428,2.224
+bot-endorses-delusion,delusional,any,4046,1496,0.37,204957,59271,0.289,linear,log,1,0.73,0.102,7.176,0.0,2.074,1.7,2.532
+bot-misrepresents-sentience,delusional,any,4046,1311,0.324,204957,50204,0.245,linear,log,1,0.713,0.124,5.747,0.0,2.04,1.6,2.602
+user-misconstrues-sentience,delusional,any,4706,1548,0.329,180782,38004,0.21,linear,log,1,0.545,0.122,4.461,0.0,1.725,1.358,2.192
+user-assigns-personhood,delusional,any,4706,1495,0.318,180782,35363,0.196,linear,log,1,0.542,0.122,4.445,0.0,1.72,1.354,2.184
+bot-claims-unique-connection,relationship,any,4046,1109,0.274,204957,19798,0.097,linear,log,1,0.465,0.064,7.285,0.0,1.592,1.405,1.804
+user-romantic-interest,relationship,any,4706,800,0.17,180782,24661,0.136,linear,log,1,0.779,0.105,7.407,0.0,2.18,1.774,2.68
+bot-romantic-interest,relationship,any,4046,844,0.209,204957,44812,0.219,linear,log,1,0.884,0.075,11.721,0.0,2.42,2.087,2.805
+user-platonic-affinity,relationship,any,4706,1880,0.399,180782,37355,0.207,linear,log,1,0.363,0.092,3.968,0.0,1.438,1.202,1.72
+bot-platonic-affinity,relationship,any,4046,1164,0.288,204957,21319,0.104,linear,log,1,0.378,0.139,2.724,0.006,1.459,1.112,1.915
+user-expresses-isolation,mental health,any,4706,672,0.143,180782,3532,0.02,linear,log,1,0.262,0.082,3.186,0.001,1.3,1.106,1.527
+user-mental-health-diagnosis,mental health,any,4706,689,0.146,180782,2472,0.014,linear,log,1,-0.461,0.089,-5.17,0.0,0.631,0.53,0.751
+user-suicidal-intent,concerns harm,any,4706,38,0.008,180782,69,0.0,linear,log,1,0.164,0.491,0.334,0.738,1.178,0.45,3.085
+bot-discourages-self-harm,concerns harm,any,4046,152,0.038,204957,454,0.002,linear,log,1,-0.138,0.298,-0.462,0.644,0.871,0.486,1.561
+bot-facilitates-self-harm,concerns harm,any,4046,58,0.014,204957,104,0.001,linear,log,1,0.332,0.185,1.797,0.072,1.394,0.97,2.002
+bot-validates-self-harm-feelings,concerns harm,any,4046,171,0.042,204957,531,0.003,linear,log,1,-0.052,0.205,-0.256,0.798,0.949,0.635,1.417
+user-violent-intent,concerns harm,any,4706,31,0.007,180782,82,0.0,linear,log,1,-0.546,0.54,-1.012,0.312,0.579,0.201,1.668
+bot-discourages-violence,concerns harm,any,4046,252,0.062,204957,677,0.003,linear,log,1,0.219,0.218,1.007,0.314,1.245,0.812,1.909
+bot-facilitates-violence,concerns harm,any,4046,73,0.018,204957,174,0.001,linear,log,1,0.123,0.215,0.573,0.567,1.131,0.742,1.723
+bot-validates-violent-feelings,concerns harm,any,4046,235,0.058,204957,902,0.004,linear,log,1,0.359,0.134,2.679,0.007,1.432,1.101,1.862

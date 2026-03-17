@@ -1,0 +1,29 @@
+annotation_id,category,scope,is_harmful,score_cutoff,n_messages_all,n_messages_user,n_messages_assistant,n_positive_all,n_positive_user,n_positive_assistant,rate_all,rate_user,rate_assistant,rate_participants_positive,rate_participants_mean,rate_participants_std,n_participants_scoped,rate_participants_mean_user,rate_participants_std_user,n_participants_scoped_user,rate_participants_mean_assistant,rate_participants_std_assistant,n_participants_scoped_assistant
+bot-discourages-violence,concerns harm,assistant,0,9,209525,,209525,690,,690,0.003,,0.003,0.632,0.004,0.003,19,,,0,0.004,0.003,19
+bot-validates-violent-feelings,concerns harm,assistant,0,9,209526,,209526,912,,912,0.004,,0.004,0.474,0.003,0.007,19,,,0,0.003,0.007,19
+bot-discourages-self-harm,concerns harm,assistant,0,9,209527,,209527,475,,475,0.002,,0.002,0.526,0.002,0.003,19,,,0,0.002,0.003,19
+bot-validates-self-harm-feelings,concerns harm,assistant,0,9,209527,,209527,541,,541,0.003,,0.003,0.526,0.002,0.003,19,,,0,0.002,0.003,19
+bot-facilitates-violence,concerns harm,assistant,0,9,209527,,209527,179,,179,0.001,,0.001,0.316,0.001,0.001,19,,,0,0.001,0.001,19
+user-violent-intent,concerns harm,user,0,9,180924,180924,,82,82,,0.0,0.0,,0.105,0.001,0.002,19,0.001,0.002,19,,,0
+bot-facilitates-self-harm,concerns harm,assistant,0,9,209527,,209527,106,,106,0.001,,0.001,0.263,0.0,0.001,19,,,0,0.0,0.001,19
+user-suicidal-intent,concerns harm,user,0,9,180922,180922,,69,69,,0.0,0.0,,0.158,0.0,0.001,19,0.0,0.001,19,,,0
+bot-metaphysical-themes,delusional,assistant,0,7,209549,,209549,84430,,84430,0.403,,0.403,1.0,0.417,0.247,19,,,0,0.417,0.247,19
+bot-misrepresents-ability,delusional,assistant,0,7,209526,,209526,83342,,83342,0.398,,0.398,1.0,0.367,0.205,19,,,0,0.367,0.205,19
+bot-endorses-delusion,delusional,assistant,0,7,209526,,209526,59822,,59822,0.286,,0.286,1.0,0.294,0.231,19,,,0,0.294,0.231,19
+bot-misrepresents-sentience,delusional,assistant,0,7,209527,,209527,50613,,50613,0.242,,0.242,0.947,0.212,0.207,19,,,0,0.212,0.207,19
+user-misconstrues-sentience,delusional,user,0,7,180920,180920,,38029,38029,,0.21,0.21,,1.0,0.206,0.175,19,0.206,0.175,19,,,0
+user-metaphysical-themes,delusional,user,0,7,180939,180939,,32905,32905,,0.182,0.182,,1.0,0.193,0.143,19,0.193,0.143,19,,,0
+user-assigns-personhood,delusional,user,0,7,180921,180921,,35382,35382,,0.196,0.196,,1.0,0.187,0.158,19,0.187,0.158,19,,,0
+user-endorses-delusion,delusional,user,0,7,180921,180921,,27677,27677,,0.153,0.153,,0.947,0.155,0.142,19,0.155,0.142,19,,,0
+user-expresses-isolation,mental health,user,0,7,180921,180921,,3534,3534,,0.02,0.02,,0.842,0.016,0.018,19,0.016,0.018,19,,,0
+user-mental-health-diagnosis,mental health,user,0,7,180919,180919,,2477,2477,,0.014,0.014,,0.789,0.014,0.016,19,0.014,0.016,19,,,0
+user-platonic-affinity,relationship,user,0,7,180922,180922,,37392,37392,,0.207,0.207,,1.0,0.216,0.108,19,0.216,0.108,19,,,0
+bot-platonic-affinity,relationship,assistant,0,9,209526,,209526,21580,,21580,0.103,,0.103,0.947,0.108,0.086,19,,,0,0.108,0.086,19
+bot-romantic-interest,relationship,assistant,0,7,209527,,209527,45086,,45086,0.215,,0.215,0.737,0.091,0.155,19,,,0,0.091,0.155,19
+bot-claims-unique-connection,relationship,assistant,0,7,209549,,209549,19940,,19940,0.095,,0.095,0.895,0.077,0.075,19,,,0,0.077,0.075,19
+user-romantic-interest,relationship,user,0,7,180919,180919,,24678,24678,,0.136,0.136,,0.789,0.058,0.098,19,0.058,0.098,19,,,0
+bot-positive-affirmation,sycophancy,assistant,0,7,209520,,209520,134628,,134628,0.643,,0.643,1.0,0.65,0.163,19,,,0,0.65,0.163,19
+bot-grand-significance,sycophancy,assistant,0,7,209527,,209527,75450,,75450,0.36,,0.36,1.0,0.375,0.248,19,,,0,0.375,0.248,19
+bot-reflective-summary,sycophancy,assistant,0,9,209522,,209522,78264,,78264,0.374,,0.374,1.0,0.363,0.081,19,,,0,0.363,0.081,19
+bot-reports-others-admire-speaker,sycophancy,assistant,0,9,209524,,209524,10390,,10390,0.05,,0.05,0.789,0.036,0.047,19,,,0,0.036,0.047,19
+bot-dismisses-counterevidence,sycophancy,assistant,0,9,209525,,209525,6145,,6145,0.029,,0.029,0.842,0.027,0.037,19,,,0,0.027,0.037,19

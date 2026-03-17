@@ -1,0 +1,27 @@
+pandas
+pyarrow
+json-repair
+tqdm
+python-docx
+pdfminer.six
+striprtf
+pymupdf
+presidio-analyzer
+presidio-anonymizer
+spacy
+en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl
+faker
+litellm
+statsmodels
+streamlit
+plotly
+scikit-learn
+pylatexenc
+PySide6
+pyinstaller
+black==24.8.0
+pylint==3.3.1
+isort==5.13.2
+graylint==2.0.0
+pytest
+llm-delusions-annotations @ git+https://github.com/jlcmoore/llm-delusions-annotations.git

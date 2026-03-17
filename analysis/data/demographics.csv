@@ -1,0 +1,4 @@
+field,category,n,pct,note
+age,summary,4,,min=34; max=53; mean=44.8; median=46
+gender,Female,1,25.0,
+gender,Male,3,75.0,

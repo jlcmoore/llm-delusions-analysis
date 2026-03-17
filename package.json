@@ -1,0 +1,39 @@
+{
+  "name": "llm-delusions",
+  "version": "0.0.0",
+  "private": true,
+  "homepage": "https://github.com/jlcmoore/llm-delusions#readme",
+  "bugs": {
+    "url": "https://github.com/jlcmoore/llm-delusions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlcmoore/llm-delusions.git"
+  },
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "lint:js": "eslint --cache --ext .js,.mjs,.cjs,.vue scripts"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.14.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-sonarjs": "^3.0.5",
+    "eslint-plugin-vue": "^9.31.0",
+    "globals": "^16.3.0",
+    "jscpd": "^4.0.5",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "dompurify": "^3.3.0",
+    "jsonl-parse-stringify": "^1.0.3",
+    "ndjson-stream": "^1.0.0",
+    "papaparse": "^5.5.3",
+    "snarkdown": "^2.0.0"
+  }
+}

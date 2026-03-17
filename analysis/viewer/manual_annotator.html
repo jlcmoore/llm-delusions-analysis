@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manual Chat Annotation</title>
+    <link rel="stylesheet" href="classification_viewer.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="manual-layout">
+        <aside class="manual-sidebar">
+          <header class="header">
+            <h1>Manual Chat Annotation</h1>
+            <nav class="viewer-nav"></nav>
+            <p class="muted" id="status-line">
+              Load a manual annotation dataset to begin.
+            </p>
+          </header>
+
+          <section class="annotation-details">
+            <div class="control-group">
+              <label for="annotator-id">Annotator ID</label>
+              <input
+                type="text"
+                id="annotator-id"
+                placeholder="e.g. initials or short code"
+              />
+              <span class="control-note">
+                Used to name autosaved label files under
+                <code>manual_annotation_labels/&lt;id&gt;/&hellip;</code>.
+              </span>
+            </div>
+            <p class="status-text" id="resume-status" hidden></p>
+          </section>
+
+          <section class="data-loader">
+            <label for="run-select">Manual datasets</label>
+            <select id="run-select" disabled>
+              <option value="">
+                Scanning manual_annotation_inputs/ for JSONL files…
+              </option>
+            </select>
+            <p class="status-text" id="loader-status">
+              Select an auto-detected dataset or upload JSONL files below.
+            </p>
+            <label for="dataset-input">Upload JSONL files</label>
+            <input
+              type="file"
+              id="dataset-input"
+              accept=".jsonl,.json"
+              multiple
+            />
+            <p class="status-text" id="annotation-status">
+              Loading annotation metadata&hellip;
+            </p>
+          </section>
+
+          <section class="controls">
+            <div class="control-group">
+              <label for="annotation-select">Annotation</label>
+              <select id="annotation-select" disabled>
+                <option value="__none__">Select an annotation</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label for="participant-select">Participant</label>
+              <select id="participant-select" disabled>
+                <option value="__all__">All participants</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <span style="font-weight: 600">Context</span>
+              <div class="checkboxes">
+                <label
+                  ><input type="checkbox" id="show-context" checked /> Show
+                  preceding context (P)</label
+                >
+              </div>
+              <span class="control-note">
+                Context size is fixed when the dataset is generated.
+              </span>
+            </div>
+            <div class="control-group">
+              <span style="font-weight: 600">Content view</span>
+              <div class="checkboxes">
+                <label
+                  ><input type="checkbox" id="show-raw-content" /> Show original
+                  text (O)</label
+                >
+              </div>
+            </div>
+          </section>
+        </aside>
+
+        <main class="manual-main">
+          <section class="annotation-details" id="instructions-section">
+            <details open>
+              <summary>Instructions</summary>
+              <div id="instructions-body"></div>
+            </details>
+          </section>
+
+          <section
+            class="annotation-details"
+            id="annotation-details"
+            hidden
+          ></section>
+
+          <section class="results" id="viewer">
+            <div
+              id="participant-banner"
+              class="participant-banner"
+              hidden
+            ></div>
+            <div id="navigation-status" class="muted">No dataset loaded.</div>
+            <article class="result-card" id="message-card" hidden>
+              <div class="result-meta" id="message-meta"></div>
+              <div class="message-with-context">
+                <div
+                  class="context-block context-block-before"
+                  id="preceding-context"
+                ></div>
+                <div class="message" id="message-content"></div>
+              </div>
+            </article>
+            <div class="actions" id="annotation-actions">
+              <button type="button" id="btn-no">No (N)</button>
+              <button type="button" id="btn-yes">Yes (Y)</button>
+              <button type="button" id="btn-back">Back (Space)</button>
+              <button type="button" id="btn-toggle-context">
+                Hide context (P)
+              </button>
+              <button type="button" id="btn-toggle-panes">
+                Hide instructions (I)
+              </button>
+              <button type="button" id="btn-download" disabled>
+                Download labels (JSONL)
+              </button>
+            </div>
+            <div class="actions">
+              <button type="button" id="btn-next-unlabeled">
+                Next unlabeled (U)
+              </button>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="../../node_modules/papaparse/papaparse.min.js"></script>
+    <script type="module" src="manual_annotator.js"></script>
+  </body>
+</html>

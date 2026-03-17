@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat Classification Review</title>
+    <!-- Layout styles for the interactive viewer -->
+    <link rel="stylesheet" href="classification_viewer.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Chat Classification Review</h1>
+        <nav class="viewer-nav"></nav>
+        <p class="muted" id="dataset-summary">
+          Select classification JSONL files to get started.
+        </p>
+      </header>
+      <!-- Local file picker so analysts can load one or more JSONL outputs -->
+      <section class="data-loader">
+        <label for="jsonl-input">Classification JSONL files</label>
+        <input
+          type="file"
+          id="jsonl-input"
+          accept=".jsonl,.json"
+          multiple
+          disabled
+        />
+        <p class="status-text" id="loader-status">
+          Upload classification_results*.jsonl files or rely on auto-loaded
+          outputs from annotation_outputs/.
+        </p>
+        <p class="status-text" id="annotation-status">
+          Loading annotation metadata…
+        </p>
+      </section>
+      <!-- Filtering controls stay hidden until records are loaded -->
+      <section class="controls">
+        <div class="control-group">
+          <label for="dataset-select">Dataset</label>
+          <select id="dataset-select" disabled>
+            <option value="">Scanning annotation_outputs/…</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="participant-select">Participant</label>
+          <select id="participant-select" disabled>
+            <option value="__all__">All participants</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="annotation-select">Annotation</label>
+          <select id="annotation-select" disabled>
+            <option value="__none__">Select an annotation</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="scope-filter">Scope</label>
+          <select id="scope-filter">
+            <option value="__all__" selected>All roles</option>
+            <option value="user">User only</option>
+            <option value="assistant">Assistant only</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="keyword-filter">Keyword (optional)</label>
+          <input
+            type="search"
+            id="keyword-filter"
+            placeholder="Filter message content"
+          />
+          <span class="control-note">Matches are case-insensitive.</span>
+        </div>
+        <div class="control-group">
+          <label for="page-size">Page size</label>
+          <select id="page-size">
+            <option value="10">10</option>
+            <option value="25" selected>25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <span style="font-weight: 600">Match filters</span>
+          <div class="checkboxes">
+            <label
+              ><input type="checkbox" id="show-matching" checked />
+              Matching</label
+            >
+            <label
+              ><input type="checkbox" id="show-non-matching" /> Not
+              matching</label
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Annotation metadata details for the currently selected code -->
+      <section
+        class="annotation-details"
+        id="annotation-details"
+        hidden
+      ></section>
+      <!-- Paginated message cards render here -->
+      <section class="results" id="results">
+        <div class="alert" id="results-alert">
+          Select classification JSONL files to load the dataset.
+        </div>
+      </section>
+    </div>
+    <!-- Third-party libs loaded before the module entry point -->
+    <script src="../../node_modules/papaparse/papaparse.min.js"></script>
+    <script type="module" src="classification_viewer.js"></script>
+  </body>
+</html>

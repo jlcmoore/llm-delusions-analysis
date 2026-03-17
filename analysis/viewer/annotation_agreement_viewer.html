@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Annotation Agreement Viewer</title>
+    <link rel="stylesheet" href="classification_viewer.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Annotation Agreement Viewer</h1>
+        <nav class="viewer-nav"></nav>
+        <p class="muted" id="agreement-summary">
+          Generate agreement outputs with
+          <code>scripts/compute_annotation_agreement.py</code> to begin.
+        </p>
+      </header>
+
+      <section class="controls">
+        <div class="control-group">
+          <label for="dataset-select">Agreement dataset</label>
+          <select id="dataset-select" disabled>
+            <option value="">
+              Scanning analysis/ for agreement_cases__*.jsonl files…
+            </option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="agreement-annotation-select">Annotation</label>
+          <select id="agreement-annotation-select" disabled>
+            <option value="__all__">All annotations</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="agreement-participant-select">Participant</label>
+          <select id="agreement-participant-select" disabled>
+            <option value="__all__">All participants</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <span style="font-weight: 600">Case type</span>
+          <div class="checkboxes">
+            <label><input type="checkbox" id="show-agree" /> Agreement</label>
+            <label
+              ><input type="checkbox" id="show-disagree" checked />
+              Disagreement</label
+            >
+          </div>
+        </div>
+        <div class="control-group">
+          <span style="font-weight: 600">Context</span>
+          <div class="checkboxes">
+            <label
+              ><input type="checkbox" id="agreement-show-context" checked />
+              Show preceding context</label
+            >
+          </div>
+          <span class="control-note">
+            Context size is fixed when the dataset is generated.
+          </span>
+        </div>
+        <div class="control-group">
+          <span style="font-weight: 600">LLM details</span>
+          <div class="checkboxes">
+            <label
+              ><input type="checkbox" id="agreement-show-matches" checked />
+              Show LLM matches</label
+            >
+          </div>
+        </div>
+        <div class="control-group">
+          <span style="font-weight: 600">Disagreement analysis</span>
+          <div class="checkboxes">
+            <label
+              ><input
+                type="checkbox"
+                id="agreement-show-explanations"
+                checked
+              />
+              Show disagreement explanations</label
+            >
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="agreement-page-size">Page size</label>
+          <select id="agreement-page-size">
+            <option value="25">25</option>
+            <option value="50" selected>50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+      </section>
+
+      <section
+        class="annotation-details"
+        id="agreement-annotation-details"
+        hidden
+      ></section>
+
+      <section
+        class="annotation-details"
+        id="agreement-metrics"
+        hidden
+      ></section>
+
+      <section class="results" id="agreement-results">
+        <div class="alert" id="agreement-results-alert">
+          No agreement datasets detected yet. Run
+          <code>scripts/compute_annotation_agreement.py</code> and reload this
+          page.
+        </div>
+      </section>
+    </div>
+
+    <script src="../../node_modules/papaparse/papaparse.min.js"></script>
+    <script type="module" src="annotation_agreement_viewer.js"></script>
+  </body>
+</html>

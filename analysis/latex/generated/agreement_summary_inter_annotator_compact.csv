@@ -1,0 +1,4 @@
+dataset,score_cutoff,items,pos_agree,neg_agree,pos_disagree,neg_disagree,ties,agreement_rate,kappa
+test,,560,121,292,70,77,0,0.738,0.613
+test-random,,280,13,233,12,22,0,0.879,0.555
+test-matches,,280,108,59,58,55,0,0.596,0.444

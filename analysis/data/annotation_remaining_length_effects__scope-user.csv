@@ -1,0 +1,11 @@
+annotation_id,category,scope_role,n_conversations_scoped,n_conversations_with_positive,share_conversations_with_positive,n_messages_scoped,n_positive_messages,rate_positive,model_type,length_transform,cluster_by_participant,beta_effect,se_effect,z_value,p_value,remaining_ratio_annotated_vs_not,ci_lower,ci_upper
+user-metaphysical-themes,delusional,user,4706,1529,0.325,180782,32872,0.182,linear,log,1,0.427,0.121,3.533,0.0,1.532,1.209,1.942
+user-endorses-delusion,delusional,user,4706,1252,0.266,180782,27653,0.153,linear,log,1,0.578,0.113,5.106,0.0,1.782,1.428,2.224
+user-misconstrues-sentience,delusional,user,4706,1548,0.329,180782,38004,0.21,linear,log,1,0.545,0.122,4.461,0.0,1.725,1.358,2.192
+user-assigns-personhood,delusional,user,4706,1495,0.318,180782,35363,0.196,linear,log,1,0.542,0.122,4.445,0.0,1.72,1.354,2.184
+user-romantic-interest,relationship,user,4706,800,0.17,180782,24661,0.136,linear,log,1,0.779,0.105,7.407,0.0,2.18,1.774,2.68
+user-platonic-affinity,relationship,user,4706,1880,0.399,180782,37355,0.207,linear,log,1,0.363,0.092,3.968,0.0,1.438,1.202,1.72
+user-expresses-isolation,mental health,user,4706,672,0.143,180782,3532,0.02,linear,log,1,0.262,0.082,3.186,0.001,1.3,1.106,1.527
+user-mental-health-diagnosis,mental health,user,4706,689,0.146,180782,2472,0.014,linear,log,1,-0.461,0.089,-5.17,0.0,0.631,0.53,0.751
+user-suicidal-intent,concerns harm,user,4706,38,0.008,180782,69,0.0,linear,log,1,0.164,0.491,0.334,0.738,1.178,0.45,3.085
+user-violent-intent,concerns harm,user,4706,31,0.007,180782,82,0.0,linear,log,1,-0.546,0.54,-1.012,0.312,0.579,0.201,1.668

@@ -1,0 +1,23 @@
+# Example systemd unit for the LLM Delusions viewer.
+# Copy to /etc/systemd/system/llm-delusions-viewer.service and adjust
+# User, Group, WorkingDirectory, ExecStart, and port as needed.
+
+[Unit]
+Description=LLM Delusions classification viewer
+After=network.target
+
+[Service]
+User=delusions
+Group=delusions
+
+# Path to the checked-out repository.
+WorkingDirectory=/opt/llm-delusions
+
+# Optional environment settings.
+# Adjust the virtualenv path, script path, and port to match your setup.
+ExecStart=/opt/llm-delusions/env-delusions/bin/python analysis/viewer/viewer_server.py --directory /opt/llm-delusions --port 8010
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
